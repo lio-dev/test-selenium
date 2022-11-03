@@ -61,11 +61,8 @@ public class BasicSeleniumTest {
 
         //update task
         driver.findElement(By.xpath("//img[contains(@style,'inline')]")).click();
-        Thread.sleep(1000);
         driver.findElement(By.xpath("//ul[@id=\"itemContextMenu\"]//a[text()='Edit']")).click();
-        Thread.sleep(1000);
         driver.findElement(By.xpath("//td/div[@class='ItemContentDiv']")).clear();
-        Thread.sleep(1000);
         driver.findElement(By.xpath("//td/div[@class='ItemContentDiv']")).sendKeys(nameProject);
         Thread.sleep(1000);
 
